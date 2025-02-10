@@ -15,7 +15,8 @@ const statusText = document.getElementById("status");
 function updateTimerDisplay() {
     let minutes = Math.floor(timeLeft / 60);
     let seconds = timeLeft % 60;
-    timerDisplay.textContent = ${minutes}:${seconds < 10 ? '0' : ''}${seconds};
+    timerDisplay.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+
 }
 
 // Функция запуска таймера
